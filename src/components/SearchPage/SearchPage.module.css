@@ -1,0 +1,24 @@
+.section {
+    max-width: 500px;
+    min-height: 100%;
+    background: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 1px rgb(255, 255, 255, 0.3);
+}
+.text1 {
+    font-weight: 100;
+    font-size: 45px;
+
+}
+.text2 {
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
