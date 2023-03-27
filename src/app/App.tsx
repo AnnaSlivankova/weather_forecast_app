@@ -23,7 +23,8 @@ function App() {
         <div className='app'>
             <ThemeProvider theme={theme}>
                 <Routes>
-                    <Route path={'/'} element={<SearchPage/>}/>
+                    <Route path={'/'} element={<Navigate to={'/search_page'}/>}/>
+                    <Route path={'/search_page'} element={<SearchPage/>}/>
                     <Route path={'/forecast'} element={<ForecastPage/>}/>
                     <Route path={'/404'} element={<h1>404: PAGE NOT FOUND</h1>}/>
                     <Route path={'*'} element={<Navigate to={'/404'}/>}/>
