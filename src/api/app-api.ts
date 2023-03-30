@@ -1,6 +1,5 @@
 import axios from "axios";
 
-const _key = '8c314ed97d3411239cbb855a59036425'
 export type ParamsType = {
     q: string
     APPID?: string
@@ -11,6 +10,6 @@ export type ParamsType = {
 
 export const weatherAPI = {
     getWeatherData(params: ParamsType) {
-        return axios.get<any>(`https://api.openweathermap.org/data/2.5/weather?APPID=${_key}&units=metric`, {params});
+        return axios.get<any>(`https://api.openweathermap.org/data/2.5/weather?APPID=${process.env.REACT_APP_API_KEY}&units=metric`, {params});
     }
 }
